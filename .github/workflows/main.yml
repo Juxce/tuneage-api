@@ -15,7 +15,7 @@
 on:
   push:
 
-name: Deploy Tune API to Google App Engine
+name: Deploy Tuneage API to Google App Engine
 
 jobs:
   deploy:
@@ -50,4 +50,4 @@ jobs:
         uses: google-github-actions/setup-gcloud@v1
 
       - name: Deploy to App Engine
-        run: gcloud functions deploy go-http-function --gen2 --runtime=go120 --region=us-west2 --source=. --entry-point=HelloGet --trigger-http --allow-unauthenticated
+        run: gcloud functions deploy go-http-function-2 --gen2 --runtime=go120 --region=us-west2 --source=. --entry-point=HelloGet --trigger-http --allow-unauthenticated
