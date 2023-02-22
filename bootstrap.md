@@ -4,6 +4,8 @@
 * [IDE](#ide)
 * [gcloud cli](#gcloud)
 * [GitHub Workflow](#github)
+* [Pulumi](#pulumi)
+* [InSpec](#inspec)
 
 ## <a name="go"></a>Go
 
@@ -31,3 +33,13 @@ The API is deployed in the Google Cloud. To work effectively with GCP you should
 
 The API uses a continuous deployment workflow to deploy to GCP. See `.github\workflows\main.yml`
 
+## <a name="pulumi"></a>Pulumi
+
+* https://www.pulumi.com/docs/get-started/install/
+* https://www.pulumi.com/registry/packages/gcp/installation-configuration/#credentials
+* https://www.pulumi.com/docs/intro/concepts/project/
+* https://www.pulumi.com/templates/serverless-application/gcp/
+
+## <a name="inspec"></a>Chef InSpec
+
+* https://community.chef.io/tools/chef-inspec
