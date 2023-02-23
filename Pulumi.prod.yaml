@@ -1,0 +1,7 @@
+config:
+  gcp:project: tuneage-poc
+  gcp:region: us-west2
+  tuneage-api:appPath: ./app
+  tuneage-api:errorDocument: error.html
+  tuneage-api:indexDocument: index.html
+  tuneage-api:sitePath: ./www
