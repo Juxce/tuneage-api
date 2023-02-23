@@ -41,3 +41,6 @@
 
 * [todo-issue](https://github.com/marketplace/actions/todo-issue) GitHub Action
 
+## Code Quality
+
+* Linter(s)
