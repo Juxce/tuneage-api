@@ -1,4 +1,4 @@
-name: Pulumi
+name: Deploy Tuneage API to prod using Pulumi
 on:
   push:
     branches:
@@ -26,6 +26,9 @@ jobs:
           stack-name: prod
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
       - name: slack-send
         uses: slackapi/slack-github-action@v1.23.0
         with:
