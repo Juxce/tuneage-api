@@ -19,6 +19,12 @@ jobs:
       - name: Downloading dependencies 📦
         run: go mod download
 
+      - name: Build 📦
+        run: go build
+
+      - name: Test 📦
+        run: go test
+
       - name: Applying infrastructure 🚀
         uses: pulumi/actions@v4
         with:
