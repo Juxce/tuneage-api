@@ -1,6 +1,6 @@
 config:
   gcp:credentials:
-    secure: AAABAKLsnXLVIl9Ey4qIVVEiRy3G6G8RjMPS2NbOATAaChp9B+ZaPZoDeA5igOS8NebmIXqLm3M4RwIZkrM0IczPT5Lz4pG+Ttz1yd3zWw94fb7egzo=
+    secure: AAABAPr3E1y01m+hwFxLOxFK0k02JJ4sseUbGSnxwp2UhVasKMGCPAEZnxln3dvF5YlOfDicFRMZkudOSbfGWwYWytxEQVKItNn31GfeHiFW2/4CfiI=
   gcp:project: tuneage-poc
   gcp:region: us-west2
   tuneage-api:appPath: ./app
