@@ -26,12 +26,3 @@ jobs:
           stack-name: prod
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-  notify:
-    name: Notify
-    runs-on: ubuntu-latest
-    steps:
-      - name: slack-send
-        uses: slackapi/slack-github-action@v1.23.0
-        with:
-          # Slack channel ID where message will be posted. Needed if using bot token
-          channel-id: C03BLMM4PHN
