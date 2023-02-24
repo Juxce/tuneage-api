@@ -8,6 +8,10 @@
 * Secure Service Accounts
 
     >Important: When a default service account is created, it is automatically granted the Editor role (roles/editor) on your project. This role includes a very large number of permissions. To follow the principle of least privilege, we strongly recommend that you either disable the automatic role grant by adding a constraint to your organization policy, or revoke the Editor role manually. If you disable or revoke the role grant, you must decide which roles to grant to the default service accounts. [1](https://cloud.google.com/iam/docs/service-accounts)
+* Enable Dependabot version updates 
+    * dependabot.yml
+
+        >To get started with Dependabot version updates, you'll need to specify which package ecosystems to update and where the package manifests are located. Please see the documentation for all configuration options: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 ## Architecture
 
