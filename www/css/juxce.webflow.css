@@ -1,0 +1,296 @@
+.juxce-intro-text {
+  margin-top: 150px;
+  font-family: 'Special Elite', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.juxce-intro-logo {
+  position: static;
+  display: block;
+  overflow: visible;
+  height: 300px;
+  margin: 100px auto 225px;
+  float: none;
+  text-align: left;
+}
+
+.juxce-home-body {
+  background-color: #f60;
+}
+
+.section {
+  background-color: #fff;
+}
+
+.juxce-section-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Oswald, sans-serif;
+  color: #f60;
+  font-weight: 400;
+  text-align: center;
+}
+
+.juxce-footer-text {
+  margin: 15px 10% 15px 0px;
+  font-family: Oswald, sans-serif;
+  color: #f60;
+  font-weight: 600;
+  text-align: right;
+}
+
+.salad-yams-footer-link {
+  color: #e60404;
+  text-decoration: none;
+}
+
+.juxce-home-footer {
+  display: block;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f60;
+}
+
+.footer-container {
+  max-width: 1100px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.rsock-footer-text {
+  margin: 15px 5% 15px 0px;
+  font-family: Oswald, sans-serif;
+  color: #000;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: right;
+}
+
+.salad-yams-footer-link-juxce {
+  color: #fff;
+  text-decoration: none;
+}
+
+.salad-yams-footer-link-juxce:hover {
+  color: #ff0693;
+}
+
+.flavor-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flavor-buttons-container {
+  margin-bottom: 150px;
+}
+
+.flavor-button-link-block {
+  display: block;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tuneage-body {
+  background-color: #06f;
+}
+
+.image {
+  display: block;
+  height: 500px;
+  margin: 150px auto;
+}
+
+.tuneage-description-section {
+  background-color: #fff;
+  background-image: linear-gradient(13deg, rgba(0, 102, 255, 0.78), hsla(0, 0%, 100%, 0.29)), url('../images/bgphoto-tuneage-yes-2560x1438.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  opacity: 1;
+}
+
+.tuneage-intro-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  font-family: 'Special Elite', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.container {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.tuneage-technologies-section {
+  background-color: #fff;
+}
+
+.tuneage-technologies-section:hover {
+  color: #2d91af;
+}
+
+.paragraph {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.tech-buttons-container {
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.tech-link-block {
+  width: 150px;
+  height: auto;
+  margin: 20px 10px;
+}
+
+.tuneage-repositories-section {
+  background-color: #9fc9ff;
+}
+
+.tuneage-repo-h3-text {
+  text-align: center;
+}
+
+.tuneage-repo-h3-text:hover {
+  color: #868f53;
+}
+
+.repositories-container {
+  margin-bottom: 75px;
+}
+
+.tuneage-repo-link {
+  font-family: Oswald, sans-serif;
+  color: #dd0031;
+  text-decoration: none;
+}
+
+.tuneage-repo-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.tuneage-section-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Oswald, sans-serif;
+  color: #06f;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .tuneage-intro-text {
+    font-size: 34px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .juxce-intro-logo {
+    height: 250px;
+  }
+
+  .juxce-section-header {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+
+  .juxce-home-footer {
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+
+  .rsock-footer-text {
+    margin-left: 5%;
+    font-size: 12px;
+  }
+
+  .image {
+    height: 430px;
+  }
+
+  .tuneage-intro-text {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .paragraph {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .tech-link-block {
+    width: 125px;
+  }
+
+  .tuneage-section-header {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .juxce-intro-logo {
+    height: 145px;
+    margin-bottom: 150px;
+  }
+
+  .rsock-footer-text {
+    margin-right: 2%;
+  }
+
+  .image {
+    height: 240px;
+  }
+
+  .tuneage-description-section {
+    background-position: 0px 0px, 50% 50%;
+  }
+
+  .tuneage-intro-text {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .tech-buttons-container {
+    margin-bottom: 50px;
+  }
+
+  .tech-link-block {
+    width: 90px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
