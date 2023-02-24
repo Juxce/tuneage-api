@@ -29,6 +29,7 @@ jobs:
   notify:
     name: Notify
     runs-on: ubuntu-latest
+    steps:
       - name: slack-send
         uses: slackapi/slack-github-action@v1.23.0
         with:
