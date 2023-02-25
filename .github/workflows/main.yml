@@ -23,7 +23,7 @@ jobs:
         run: go build
 
       - name: Test 📦
-        run: go test
+        run: go test .../.
 
       - name: Applying infrastructure 🚀
         uses: pulumi/actions@v4
