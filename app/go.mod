@@ -1,5 +1,5 @@
-module example.com/tuneage-api/api
+module juxce.com/tuneage-api/api
 
-go 1.16
+go 1.20
 
-require cloud.google.com/go/functions v1.0.0
+require github.com/approvals/go-approval-tests v0.0.0-20220530063708-32d5677069bd
