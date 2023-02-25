@@ -1,6 +1,7 @@
-package api
+package tuneage_api
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
@@ -21,7 +22,8 @@ func TestResponse(t *testing.T) {
 }
 
 func TestData(t *testing.T) {
-	NowTimeFunc := MockNowTimeFunc
+	NowTimeFunc = MockNowTimeFunc
+
 	req := httptest.NewRequest(http.MethodGet, "/", nil)
 	w := httptest.NewRecorder()
 
@@ -40,6 +42,7 @@ func TestData(t *testing.T) {
 }
 
 func MockNowTimeFunc() time.Time {
+	fmt.Println("Using mock time")
 	return time.Date(2000, 12, 15, 17, 8, 00, 0, time.UTC)
 }
 

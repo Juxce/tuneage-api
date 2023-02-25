@@ -1,4 +1,4 @@
-package api
+package tuneage_api
 
 import (
 	"fmt"
@@ -9,6 +9,10 @@ import (
 var NowTimeFunc func() time.Time = time.Now
 
 func Data(w http.ResponseWriter, r *http.Request) {
+	// if NowTimeFunc == nil {
+	// 	NowTimeFunc = RealNowTimeFunc
+	// }
+
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "GET")
 
