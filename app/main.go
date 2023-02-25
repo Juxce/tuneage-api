@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+var NowTimeFunc func() time.Time = time.Now
+
 func Data(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "GET")
@@ -16,5 +18,5 @@ func Data(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	fmt.Fprintf(w, `{ "now": %d }`, time.Now().UnixNano()/1000000)
+	fmt.Fprintf(w, `{ "now": %d }`, NowTimeFunc().UnixNano()/1000000)
 }
