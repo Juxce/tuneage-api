@@ -1,0 +1,16 @@
+{
+  "Code": 200,
+  "HeaderMap": {
+    "Access-Control-Allow-Methods": [
+      "GET"
+    ],
+    "Access-Control-Allow-Origin": [
+      "*"
+    ],
+    "Content-Type": [
+      "application/json"
+    ]
+  },
+  "Body": {},
+  "Flushed": false
+}
