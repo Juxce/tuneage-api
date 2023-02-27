@@ -47,4 +47,5 @@
 
 ## Code Quality
 
-* Linter(s)
+* TODO Add Linter(s)
+* Investigate and adopt a linter for Go, CSS, HTML
