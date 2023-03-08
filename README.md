@@ -6,4 +6,4 @@ tuneage-api
 
 ## Tooling setup - Windows
 
-Coming soon
+Coming soon!
