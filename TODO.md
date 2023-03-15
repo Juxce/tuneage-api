@@ -72,8 +72,6 @@
 
 ## Process
 
-* [todo-issue](https://github.com/marketplace/actions/todo-issue) GitHub Action
-
 ## Code Quality
 
 * TODO Add Linter(s)
