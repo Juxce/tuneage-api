@@ -32,4 +32,4 @@ jobs:
           stack-name: juxce/tuneage-api/prod
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-        run: apiURL="${{ steps.pulumi.outputs.apiURL }}"; echo "apiURL is $apiURL"; export apiURL
+      - run: apiURL="${{ steps.pulumi.outputs.apiURL }}"; echo "apiURL is $apiURL"; export apiURL
