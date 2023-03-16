@@ -1,6 +1,7 @@
 package tuneage_api
 
 import (
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -10,14 +11,28 @@ import (
 )
 
 func TestResponse(t *testing.T) {
-	url := os.Getenv("apiURL")
+	var err error
+	var url string
+	var client http.Client
+	var res *http.Response
+	var body []byte
+
+	url = os.Getenv("apiURL")
 	log.Print(url)
 	assert.NotNil(t, url, "url should not be nil")
-	client := http.Client{}
+
+	client = http.Client{}
 	assert.NotNil(t, client, "client should not be nil")
-	err, res := client.Get(url)
-	assert.NotNil(t, err, "client.Get should not return an error")
-	assert.Contains(t, res, "{ \"now\": ")
+
+	res, err = client.Get(url)
+	assert.Nil(t, err, "client.Get should not return an error")
+	assert.Equal(t, res.StatusCode, 200)
+
+	body, err = ioutil.ReadAll(res.Body)
+	assert.Nil(t, err, "ioutil.ReadAll should not return an error")
+	assert.Contains(t, string(body[:]), "{ \"now\": ", "body should contain { \"now\": ")
+
+	res.Body.Close()
 }
 
 // func _TestData(t *testing.T) {

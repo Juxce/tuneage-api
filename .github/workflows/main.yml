@@ -24,6 +24,11 @@ jobs:
 
       - name: Unit Tests 📦
         run: go test ./app
+      
+      # TODO Add vulnerability scanning with govulncheck
+      # See https://semaphoreci.medium.com/vulnerability-scanning-in-go-with-govulncheck-7b6a13e87b39 for more information
+      # Test locally before adding it to CI
+      # AC: Critical and Severe vulnerabilities break the build.
 
       - uses: pulumi/actions@v4
         name: Applying infrastructure 🚀
@@ -33,6 +38,10 @@ jobs:
           stack-name: juxce/tuneage-api/prod
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          
       - run: apiURL="${{ steps.pulumi.outputs.apiURL }}"; echo "apiURL is $apiURL"; export apiURL
         name: Export Outputs
+        
+      - run: go test tests/integration/main_test.go
+        name: Integration Test
         
