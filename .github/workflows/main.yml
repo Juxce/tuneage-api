@@ -18,12 +18,12 @@ jobs:
 
       - name: Downloading dependencies 📦
         run: |
-          cd infrastructure
+          cd app
           go mod download -x
 
       - name: Build 📦
         run: |
-          cd infrastructure
+          cd app
           go build
 
       - name: Unit Tests 📦
