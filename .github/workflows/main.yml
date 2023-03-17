@@ -43,6 +43,7 @@ jobs:
           command: up
           stack-name: juxce/tuneage-api/prod
           work-dir: ./infrastructure
+          diff: true
           message: Deployed by Juxce Tuneage-api GitHub workflow main.yml
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
