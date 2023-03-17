@@ -16,14 +16,15 @@ jobs:
         with:
           go-version: '1.20'
 
-      - name: Change working folder
-        run: cd infrastructure
-
       - name: Downloading dependencies 📦
-        run: go mod download
+        run: |
+          cd infrastructure
+          go mod download
 
       - name: Build 📦
-        run: go build
+        run: |
+          cd infrastructure
+          go build
 
       - name: Unit Tests 📦
         run: go test ./app
