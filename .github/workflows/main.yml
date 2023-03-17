@@ -39,9 +39,11 @@ jobs:
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           
-      - run: apiURL="${{ steps.pulumi.outputs.apiURL }}"; echo "apiURL is $apiURL"; export apiURL
-        name: Export Outputs
-        
-      - run: go test tests/integration/main_test.go
-        name: Integration Test
+      - run: |
+          echo "Running integration tests"
+          apiURL="${{ steps.pulumi.outputs.apiURL }}"
+          echo "apiURL is $apiURL"
+          export apiURL
+          go test tests/integration/main_test.go
+        name: Integration Testing
         
