@@ -19,7 +19,7 @@ jobs:
       - name: Downloading dependencies 📦
         run: |
           cd infrastructure
-          go mod download
+          go mod download -x
 
       - name: Build 📦
         run: |
@@ -27,7 +27,9 @@ jobs:
           go build
 
       - name: Unit Tests 📦
-        run: go test ./app
+        run: |
+          cd infrastructure
+          go test ./app
       
       # TODO Add vulnerability scanning with govulncheck
       # See https://semaphoreci.medium.com/vulnerability-scanning-in-go-with-govulncheck-7b6a13e87b39 for more information
