@@ -28,8 +28,8 @@ jobs:
 
       - name: Unit Tests 📦
         run: |
-          cd infrastructure
-          go test ./app
+          cd app
+          go test
       
       # TODO Add vulnerability scanning with govulncheck
       # See https://semaphoreci.medium.com/vulnerability-scanning-in-go-with-govulncheck-7b6a13e87b39 for more information
